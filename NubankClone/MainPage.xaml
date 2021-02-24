@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NubankClone.MainPage"
+             xmlns:syncEffectsView="clr-namespace:Syncfusion.XForms.EffectsView;assembly=Syncfusion.Core.XForms">
+
+    <Grid BackgroundColor="#8A05BE" Padding="0,10,10,0">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid Padding="20,0,40,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" FontSize="28" TextColor="White" FontAttributes="Bold" Text="Olá, Fulano de tal" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <StackLayout Grid.Column="1" Orientation="Horizontal" VerticalOptions="Center">
+                    <Button WidthRequest="50" HeightRequest="50" BackgroundColor="#9823C6" CornerRadius="100" ImageSource="visibility.png"/>
+                    <Button WidthRequest="50" HeightRequest="50" BackgroundColor="#9823C6" CornerRadius="100" ImageSource="settings.png" />
+                </StackLayout>
+            </Grid>
+
+        </Grid>
+
+        <Grid Grid.Row="1" Padding="20,0,20,0">
+            <ScrollView VerticalScrollBarVisibility="Never">
+                <StackLayout>
+                    <Frame Padding="20,20,20,20" HasShadow="True" Margin="0,5,0,5" CornerRadius="3" >
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer x:Name="cartClick" Tapped="cartClick_Tapped"/>
+                        </Frame.GestureRecognizers>
+
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="card.png"/>
+                                <Label Margin="10,0,0,0" Text="Cartão de Crédito" TextColor="#A2A2A2" FontSize="14" VerticalOptions="Center"/>
+                            </StackLayout>
+                            <Label Text="Fatura atual" TextColor="#A2A2A2" FontSize="12"/>
+                            <Label Text="R$ 0,00" FontSize="28" TextColor="#39A9E0" FontAttributes="Bold"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Limite disponivel" TextColor="#191919"/>
+                                <Label Text="R$ 1465,79" TextColor="#1F7F45"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame Padding="20,20,20,20" HasShadow="True" Margin="0,5,0,5" CornerRadius="3">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer/>
+                        </Frame.GestureRecognizers>
+
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="money.png"/>
+                                <Label Margin="10,0,0,0" Text="Conta" TextColor="#A2A2A2" FontSize="14" VerticalOptions="Center"/>
+                            </StackLayout>
+                            <Label Text="Saldo disponivel" TextColor="#A2A2A2" FontSize="12"/>
+                            <Label Text="R$ 0,00" FontSize="28" TextColor="Black" FontAttributes="Bold"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame Padding="20,20,20,20" HasShadow="True" Margin="0,5,0,5" CornerRadius="3">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer/>
+                        </Frame.GestureRecognizers>
+
+                        <StackLayout Margin="0,5,0,5">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="giftbox.png"/>
+                                <Label Margin="10,0,0,0" Text="Rewards" TextColor="#8A05BE" FontSize="24" VerticalOptions="Center"/>
+                            </StackLayout>
+                            <Label Text="Pague compras com pontos que nunca expiram" TextColor="Black" FontSize="14"/>
+                            <Button HorizontalOptions="Start" Text="Conhecer" TextTransform="Uppercase" BackgroundColor="White" TextColor="#8A05BE" FontAttributes="Bold" BorderColor="#8A05BE" BorderWidth="0.5" Padding="10,0,10,0"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame Padding="20,20,20,20" HasShadow="True" Margin="0,5,0,5" CornerRadius="3">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer/>
+                        </Frame.GestureRecognizers>
+
+                        <StackLayout Margin="0,5,0,5">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="money.png"/>
+                                <Label Margin="10,0,0,0" Text="Seguro de vida" TextColor="#8A05BE" FontSize="24" VerticalOptions="Center"/>
+                            </StackLayout>
+                            <Label Text="Pague compras com pontos que nunca expiram" TextColor="Black" FontSize="14"/>
+                            <Button HorizontalOptions="Start" Text="Conhecer" TextTransform="Uppercase" BackgroundColor="White" TextColor="#8A05BE" FontAttributes="Bold" BorderColor="#8A05BE" BorderWidth="0.5" Padding="10,0,10,0"/>
+                        </StackLayout>
+                    </Frame>
+
+                </StackLayout>
+            </ScrollView>
+        </Grid >
+
+        <Grid Grid.Row="2" Padding="20,0,0,0">
+            <ScrollView Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Start" HorizontalScrollBarVisibility="Never">
+                <StackLayout Orientation="Horizontal">
+                    <Button WidthRequest="90" HeightRequest="100" Background="#9823C6" Margin="0" CornerRadius="3" TextColor="White" Text="Pix" TextTransform="None" ImageSource="pix.png" ContentLayout="Top , "/>
+
+                    <Button WidthRequest="90" HeightRequest="100" Background="#9823C6" Margin="0" CornerRadius="3" TextColor="White" Text="Pagar" TextTransform="None" ImageSource="barcode.png" ContentLayout="Top"/>
+                    <Button WidthRequest="90" HeightRequest="100" Background="#9823C6" Margin="0" CornerRadius="3" TextColor="White" Text="Indicar amigos" TextTransform="None" ImageSource="follow.png" ContentLayout="Top"/>
+                    <Button WidthRequest="90" HeightRequest="100" Background="#9823C6" Margin="0" CornerRadius="3" TextColor="White" Text="Transferir" TextTransform="None" ImageSource="transfer.png " ContentLayout="Top"/>
+                    <Button WidthRequest="90" HeightRequest="100" Background="#9823C6" Margin="0" CornerRadius="3" TextColor="White" Text="Depositar" TextTransform="None"/>
+                    <Button WidthRequest="90" HeightRequest="100" Background="#9823C6" Margin="0" CornerRadius="3" TextColor="White" Text="Emprestimos" TextTransform="None"/>
+                    <Button WidthRequest="90" HeightRequest="100" Background="#9823C6" Margin="0" CornerRadius="3" TextColor="White" Text="Cartão Virtual" TextTransform="None"/>
+                    <Button WidthRequest="90" HeightRequest="100" Background="#9823C6" Margin="0" CornerRadius="3" TextColor="White" Text="Recarga de celular" TextTransform="None"/>
+                    <Button WidthRequest="90" HeightRequest="100" Background="#9823C6" Margin="0" CornerRadius="3" TextColor="White" Text="Ajustar Limite" TextTransform="None"/>
+                    <Button WidthRequest="90" HeightRequest="100" Background="#9823C6" Margin="0" CornerRadius="3" TextColor="White" Text="Bloquear cartão" TextTransform="None"/>
+                    <Button WidthRequest="90" HeightRequest="100" Background="#9823C6" Margin="0" CornerRadius="3" TextColor="White" Text="Cobrar" TextTransform="None"/>
+                    <Button WidthRequest="90" HeightRequest="100" Background="#9823C6" Margin="0" CornerRadius="3" TextColor="White" Text="Dividir valor" TextTransform="None"/>
+                    <Button WidthRequest="90" HeightRequest="100" Background="#9823C6" Margin="0" CornerRadius="3" TextColor="White" Text="Doação" TextTransform="None"/>
+                    <Button WidthRequest="90" HeightRequest="100" Background="#9823C6" Margin="0" CornerRadius="3" TextColor="White" Text="Me ajuda" TextTransform="None"/>
+
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </Grid>
+
+</ContentPage>

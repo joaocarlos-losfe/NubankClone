@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NubankClone.Android", "NubankClone.Android\NubankClone.Android.csproj", "{4359C19E-E3AA-4781-ACB4-ACBC7C2CB576}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NubankClone", "NubankClone\NubankClone.csproj", "{EA5542B5-CC1C-40A6-B583-BD2143BE0939}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4359C19E-E3AA-4781-ACB4-ACBC7C2CB576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4359C19E-E3AA-4781-ACB4-ACBC7C2CB576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4359C19E-E3AA-4781-ACB4-ACBC7C2CB576}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4359C19E-E3AA-4781-ACB4-ACBC7C2CB576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4359C19E-E3AA-4781-ACB4-ACBC7C2CB576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4359C19E-E3AA-4781-ACB4-ACBC7C2CB576}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EA5542B5-CC1C-40A6-B583-BD2143BE0939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA5542B5-CC1C-40A6-B583-BD2143BE0939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA5542B5-CC1C-40A6-B583-BD2143BE0939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA5542B5-CC1C-40A6-B583-BD2143BE0939}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C6D073B-6F31-49F0-A776-F40A05171F1A}
+	EndGlobalSection
+EndGlobal
